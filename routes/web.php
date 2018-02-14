@@ -11,13 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.admin');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
+Route::middleware(['auth','islog'])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/users',function(){
-    return view('admin.user.index');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/users',function(){
+        return view('admin.user.index');
+    });
+    Route::get('changepws',function(){
+        return view('admin.changepw.addnew');
+    });
 });
+

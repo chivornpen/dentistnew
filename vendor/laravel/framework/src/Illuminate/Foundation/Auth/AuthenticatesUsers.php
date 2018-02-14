@@ -114,7 +114,20 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        //
+        
+        // if($user->isChangepw==0){
+        //     return redirect()->to('changepws');
+        // }
+        // if($user->isActive==0){
+        //         $user->isActive = 1;
+        //         $user->save();
+        //         return redirect()->intended($this->redirectPath());
+        // }elseif($user->isActive==1) {
+        //         return redirect()->to('login')->with('message','You Can not Login (This User Still in login);');    
+        // }else {
+        //         return redirect()->to('login')->with('message','This user not allowed to use');
+        // }
+        
     }
 
     /**
@@ -139,7 +152,7 @@ trait AuthenticatesUsers
      */
     public function username()
     {
-        return 'email';
+        return 'name';
     }
 
     /**
@@ -149,8 +162,12 @@ trait AuthenticatesUsers
      * @return \Illuminate\Http\Response
      */
     public function logout(Request $request)
-    {
-        $this->guard()->logout();
+    {   
+        // $userid=User::find($request->user_id);
+        // $userid->isActive=0;
+        // $userid->save();
+
+        // $this->guard()->logout();
 
         $request->session()->invalidate();
 
