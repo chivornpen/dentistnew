@@ -325,6 +325,7 @@ class ComposerStaticInitc5168b8fac3eb5ee89e7187547f92e6f
     );
 
     public static $classMap = array (
+        'App\\Branch' => __DIR__ . '/../..' . '/app/Branch.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -333,12 +334,17 @@ class ComposerStaticInitc5168b8fac3eb5ee89e7187547f92e6f
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\branchController' => __DIR__ . '/../..' . '/app/Http/Controllers/branchController.php',
+        'App\\Http\\Controllers\\defaultController' => __DIR__ . '/../..' . '/app/Http/Controllers/defaultController.php',
+        'App\\Http\\Controllers\\userController' => __DIR__ . '/../..' . '/app/Http/Controllers/userController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Middleware\\isChange' => __DIR__ . '/../..' . '/app/Http/Middleware/isChange.php',
+        'App\\Http\\Middleware\\isLog' => __DIR__ . '/../..' . '/app/Http/Middleware/isLog.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
