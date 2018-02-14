@@ -17,7 +17,7 @@ class defaultController extends Controller
         }else{
 
             $user = User::all();
-            if(!$user){
+            if(!count($user)){
                 $u = new User();
                 $u->name = "Supper";
                 $u->email ="supper@gmail.com";
