@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Branch;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -10,7 +11,9 @@ class branchController extends Controller
 
     public function index()
     {
-
+        $b=0;
+//        $b = Branch::where('unused',1)->get();
+        return view('admin.branch.table_content');
     }
 
 
