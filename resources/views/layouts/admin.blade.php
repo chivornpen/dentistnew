@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Dentist</title>
   <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
@@ -18,7 +18,7 @@
 
   {{--sweet alert--}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-  {{--  select2 css  --}}
+    {{--select2 css--}}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
@@ -35,7 +35,7 @@
 
     <!-- Main Header -->
     <header class="main-header">
-  
+
       <!-- Logo -->
       <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -43,7 +43,7 @@
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>Admin</b>LTE</span>
       </a>
-  
+
       <!-- Header Navbar -->
       <nav class="navbar navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
@@ -88,7 +88,7 @@
               </ul>
             </li>
             <!-- /.messages-menu -->
-  
+
             <!-- Notifications Menu -->
             <li class="dropdown notifications-menu">
               <!-- Menu toggle button -->
@@ -162,7 +162,7 @@
                 <!-- The user image in the menu -->
                 <li class="user-header">
                   <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
-  
+
                   <p>
                     Alexander Pierce - Web Developer
                     <small>Member since Nov. 2012</small>
@@ -211,10 +211,10 @@
     </header>
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
-  
+
       <!-- sidebar: style can be found in sidebar.less -->
       <section class="sidebar">
-  
+
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
           <div class="pull-left image">
@@ -226,7 +226,7 @@
             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
           </div>
         </div>
-  
+
         <!-- search form (Optional) -->
         <form action="#" method="get" class="sidebar-form">
           <div class="input-group">
@@ -243,14 +243,14 @@
       </section>
       <!-- /.sidebar -->
     </aside>
-  
+
     <!-- Content Wrapper. Contains page content -->
-    
+
     <div class="content-wrapper">
       @yield('content')
     </div>
     <!-- /.content-wrapper -->
-  
+
     <!-- Main Footer -->
     <footer class="main-footer">
       <!-- To the right -->
@@ -260,7 +260,7 @@
       <!-- Default to the left -->
       <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
     </footer>
-  
+
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Create the tabs -->
@@ -277,17 +277,17 @@
             <li>
               <a href="javascript:;">
                 <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-  
+
                 <div class="menu-info">
                   <h4 class="control-sidebar-subheading">Langdon Birthday</h4>
-  
+
                   <p>Will be 23 on April 24th</p>
                 </div>
               </a>
             </li>
           </ul>
           <!-- /.control-sidebar-menu -->
-  
+
           <h3 class="control-sidebar-heading">Tasks Progress</h3>
           <ul class="control-sidebar-menu">
             <li>
@@ -298,7 +298,7 @@
                       <span class="label label-danger pull-right">70%</span>
                     </span>
                 </h4>
-  
+
                 <div class="progress progress-xxs">
                   <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
                 </div>
@@ -306,7 +306,7 @@
             </li>
           </ul>
           <!-- /.control-sidebar-menu -->
-  
+
         </div>
         <!-- /.tab-pane -->
         <!-- Stats tab content -->
@@ -316,13 +316,13 @@
         <div class="tab-pane" id="control-sidebar-settings-tab">
           <form method="post">
             <h3 class="control-sidebar-heading">General Settings</h3>
-  
+
             <div class="form-group">
               <label class="control-sidebar-subheading">
                 Report panel usage
                 <input type="checkbox" class="pull-right" checked>
               </label>
-  
+
               <p>
                 Some information about this general settings option
               </p>
@@ -348,9 +348,12 @@
   <!-- AdminLTE App -->
   <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
   <!-- Sparkline -->
-  {{--<script src="{{asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>--}}
+  <script src="{{asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
+
   <!-- AdminLTE for demo purposes -->
   {{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
+
+
   <!-- jQuery 3 -->
   <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
   <!-- Bootstrap 3.3.7 -->
