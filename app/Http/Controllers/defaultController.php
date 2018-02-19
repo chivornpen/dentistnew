@@ -21,17 +21,21 @@ class defaultController extends Controller
                 $u = new User();
                 $u->name = "Supper";
                 $u->email ="supper@gmail.com";
+                $u->displayName = "Supper User";
                 $u->password = bcrypt('supper');
                 $u->isChangepw = 1;
                 $u->isActive = 1;
+                $u->isLock = 0;
                 $u->save();
 
                 $u = new User();
-                $u->name = "Administrator";
+                $u->name = "admin";
                 $u->email ="admin@gmail.com";
+                $u->displayName = "Administrator";
                 $u->password = bcrypt("admin");
                 $u->isChangepw = 1;
                 $u->isActive = 1;
+                $u->isLock = 0;
                 $u->save();
             }
             return view('welcome');
