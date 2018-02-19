@@ -13,15 +13,21 @@
                 </ul>
             </li>
 
-            {{--Roles--}}
+            {{--branch--}}
             <li class="treeview"><a href="#"><i class="fa fa-university fa-fw"></i> Branch <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
                 <ul class="treeview-menu">
                     <li><a href="{{route('branch.create')}}">&nbsp;&nbsp;&nbsp;&nbsp; Create</a></li><li class="treeview">
                 </ul>
-
             </li>
+            {{---end branch--}}
+            {{--staff--}}
+            <li class="treeview"><a href="#"><i class="fa fa-users"></i> Staff <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                <ul class="treeview-menu">
+                    <li><a href="{{route('staff.create')}}">&nbsp;&nbsp;&nbsp;&nbsp; Create</a></li><li class="treeview">
+                </ul>
+            </li>
+            {{---end staff--}}
 
-            {{--end setvlaue--}}
         </ul>
 
 

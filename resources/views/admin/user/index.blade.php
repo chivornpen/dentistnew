@@ -13,10 +13,33 @@
 </section>
 <section class="content container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="col-lg-12">
       {!!Form::open()!!}
+
       {!!Form::close()!!}
     </div>
   </div>
+  <div class="row table-responsive" id="tblViewuse">
+  </div>
 </section>
+@stop
+@section('script')
+<script>
+$(document).ready(function () {
+  getUserView()
+});
+function getUserView(){
+  $.ajax({
+    type: "get",
+    url: "{{route('user.viewUser')}}",
+    dataType: "html",
+    success: function (data) {
+      console.log(data)
+    }
+    error:function (error) { 
+      console.log(error)
+    }
+  });
+};
+</script>
 @stop
