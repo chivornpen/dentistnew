@@ -6,6 +6,8 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use App\Role;
+use App\Module;
 
 class defaultController extends Controller
 {
@@ -13,7 +15,10 @@ class defaultController extends Controller
     public function index()
     {
         if(Auth::check()){
-            return view('admin.user.index');
+            $role = Role::where('isLock',0)->pluck('name','id');
+            $module = Module::where('isLock',0)->pluck('nav','id');
+            // dd($role);
+            return view('admin.user.index',compact('role','module'));
         }else{
 
             $user = User::all();

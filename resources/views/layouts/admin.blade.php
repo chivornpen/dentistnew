@@ -339,6 +339,7 @@
   <!-- ./wrapper -->
 <!-- ./wrapper -->
 
+<<<<<<< HEAD
 <!-- jQuery 3 -->
 <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -359,6 +360,8 @@
 
 <!-- AdminLTE for demo purposes -->
 {{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
+=======
+>>>>>>> 75c2f933b2e7c11404278cb1ee98f32999648920
   <!-- jQuery 3 -->
   <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
   <!-- Bootstrap 3.3.7 -->
@@ -369,16 +372,23 @@
   <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
   <!-- Sparkline -->
   <script src="{{asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
+<<<<<<< HEAD
 
   <!-- AdminLTE for demo purposes -->
   {{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
 
 
+=======
+>>>>>>> 75c2f933b2e7c11404278cb1ee98f32999648920
   <!-- jQuery 3 -->
   <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
   <!-- Bootstrap 3.3.7 -->
   <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
   <!-- DataTables -->
+
+
+
+
   <script src="{{ asset('js/app.js') }}"></script>
   @yield('script')
 
@@ -387,5 +397,9 @@
   <script src="{{asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75c2f933b2e7c11404278cb1ee98f32999648920
 </body>
 </html>
