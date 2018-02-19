@@ -9,7 +9,6 @@ Route::middleware(['auth','islog'])->group(function () {
     Route::resource('staff','StaffController');
     Route::resource('/branch','branchController');
     Route::resource('/user','userController');
-
 });
 Auth::routes();
 

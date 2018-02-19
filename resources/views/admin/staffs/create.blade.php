@@ -184,7 +184,7 @@
                     <div class="panel-heading">Staff Views</div>
                     <div class="panel-body">
                         <!-- /.box-header -->
-                        <div id="tableCustomer">
+                        <div id="listViews">
 
                         </div>
                         <!-- /.box-body -->
@@ -222,5 +222,23 @@
             var output = document.getElementById('preViewEdit');
             output.src = URL.createObjectURL(event.target.files[0]);
         };
+        $(document).ready(function () {
+            getTableViewStaff();
+        });
+        function getTableViewStaff() {
+            $.ajax({
+                type : 'get',
+                url : "{{route('staff.index')}}",
+                dataType : 'html',
+                beforeSend:function () {
+
+                },success:function (data) {
+                    $('#listViews').html(data);
+                    $('#staffList').DataTable();
+                }, error:function (error) {
+                    console.log(error);
+                }
+            });
+        }
     </script>
 @stop

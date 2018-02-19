@@ -18,7 +18,7 @@ class StaffController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.staffs.tableviewstaff');
     }
 
     /**
