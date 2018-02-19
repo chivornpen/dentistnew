@@ -339,7 +339,6 @@
   <!-- ./wrapper -->
 <!-- ./wrapper -->
 
-<<<<<<< HEAD
 <!-- jQuery 3 -->
 <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -357,10 +356,9 @@
 <script src="{{asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <!-- ChartJS -->
 <script src="{{asset('bower_components/chart.js/Chart.js')}}"></script>
+
 <!-- AdminLTE for demo purposes -->
-<script src="{{asset('dist/js/demo.js')}}"></script>
-@yield('script')
-=======
+{{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
   <!-- jQuery 3 -->
   <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
   <!-- Bootstrap 3.3.7 -->
@@ -381,19 +379,11 @@
   <!-- Bootstrap 3.3.7 -->
   <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
   <!-- DataTables -->
-
-
-
-
   <script src="{{ asset('js/app.js') }}"></script>
   @yield('script')
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script src="{{asset('bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
   <script src="{{asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
-
-
-
->>>>>>> 07d0836798831af0aedd511ddacc44c52fb5a0df
 </body>
 </html>
