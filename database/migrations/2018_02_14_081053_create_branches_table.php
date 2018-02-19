@@ -15,6 +15,14 @@ class CreateBranchesTable extends Migration
     {
         Schema::create('branches', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name','100');
+            $table->char('branchCode',6);
+            $table->string('branchNameLocal');
+            $table->string('branchShortName');
+            $table->smallInteger('pCode');
+            $table->boolean('unused');
+            $table->boolean('leadBranch');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
