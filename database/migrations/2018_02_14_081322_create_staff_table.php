@@ -26,6 +26,7 @@ class CreateStaffTable extends Migration
             $table->date('effectDate')->nullable();
             $table->date('endDate')->nullable();
             $table->string('photo')->nullable();
+            $table->tinyInteger('active');
             $table->integer('branch_id')->nullable();
             $table->integer('user_id')->nullable();
             $table->integer('recordNo')->nullable();
