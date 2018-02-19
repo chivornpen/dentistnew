@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\User;
 class userController extends Controller
 {
     /**
@@ -81,5 +81,10 @@ class userController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function viewUser()
+    {
+        $user = User::where('isLook',0)->get();
+        return view('admin.user.view',compact('user'));
     }
 }
