@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\User;
-use App\Role;
 use App\Module;
-class userController extends Controller
+use Illuminate\Http\Request;
+
+class ModuleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,7 @@ class userController extends Controller
      */
     public function index()
     {
-        $user = User::where('isLock',0)->get();
-        // dd($user);
-        return view('admin.user.viewUser',compact('user'));
+        //
     }
 
     /**
@@ -28,10 +24,7 @@ class userController extends Controller
      */
     public function create()
     {
-        $role = Role::where('isLock',0)->pluck('name','id');
-        $module = Module::where('isLock',0)->pluck('nav','id');
-        // dd($role);
-        return view('admin.user.index',compact('role','module'));
+        //
     }
 
     /**
@@ -48,10 +41,10 @@ class userController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Module $module)
     {
         //
     }
@@ -59,10 +52,10 @@ class userController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Module $module)
     {
         //
     }
@@ -71,10 +64,10 @@ class userController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Module $module)
     {
         //
     }
@@ -82,16 +75,11 @@ class userController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Module $module)
     {
         //
-    }
-    public function viewUser()
-    {
-        $user = User::where('isLook',0)->get();
-        return view('admin.user.view',compact('user'));
     }
 }
